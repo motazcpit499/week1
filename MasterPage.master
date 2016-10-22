@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>SHMS</title>
+    <link href="tooplate_style.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1"  runat="server">
+    
+<div id="tooplate_wrapper">
+
+	<div id="tooplate_header">
+    	
+        <div id="tooplate_menu">
+        	<ul>
+                <li><a href="Default.aspx" >Home</a></li>
+                <li><a href="bout.aspx">About US</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="Login.aspx">Login</a></li>
+                <li><a href="Contact.aspx">Contact</a></li>
+            </ul>
+            <div class="cleaner"></div>
+        </div> <!-- end of menu -->
+        
+		<div id="site_title"><h1><a href="#" >Smart Hospital</a><span>Smart Hospital managemnt </span></h1></div>
+    
+    </div> <!-- end of header -->
+    
+    <div id="tooplate_middle">
+        <!-- end of search box -->
+    </div> <!-- end of middle -->
+    
+    <div id="tooplate_main">
+                
+        <div id="tooplate_content">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </div> <!-- end of content -->
+        
+    </div>	<!-- end of main -->
+    
+    <div id="tooplate_footer">
+    
+        Copyright © 2017 <a href="#">Smart Hospital Company</a>
+    
+    </div> <!-- end of tooplate_footer -->
+
+</div> <!-- end of wrapper -->
+  
+    </form>
+</body>
+</html>
